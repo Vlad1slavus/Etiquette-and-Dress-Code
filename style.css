@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Akshar; 
+    src: url(../fonts/Akshar-VariableFont_wght.ttf); 
+}
+@font-face {
+    font-family: Radja;
+    src: url(../fonts/Rajdhani-Light.ttf);
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header {
+    font-family: Radja;
+    font-weight: 100;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    /* -webkit-box-shadow: 1px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 8px 8px 0px rgba(34, 60, 80, 0.2); */
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    fill: rgb(255, 255, 255);
+    width: 75px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 100px;
+}
+nav a {
+    height: 60px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 5px;
+    transition: 0.1s ease-in-out;
+    border-radius: 10px;
+}
+nav a:hover {
+    background-color: white;
+    color: #82755f;
+}
+.dropbtn {
+    display: block;
+}
+.dropdown {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #82755f;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 2px;
+    min-height: 70px;
+}
+.dropdown-content a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #82755f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.arrow {
+    width: 20px;
+    fill: white;
+    padding: 0px 10px;
+    transition: 0.1s ease-in-out;
+    transform: rotate(180deg);
+}
+.dropdown:hover .arrow {
+    fill: #82755f;
+    transform: rotate(0deg);
+}
+.wrapper {
+    
+    background-image: url(https://scontent-ort2-1.cdninstagram.com/v/t51.2885-15/277638229_1015664549386880_5911973519633220459_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=-Ym0RS3FXIgAX-7oTFU&_nc_ht=scontent-ort2-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AT-1Q0CbAKI1CI5o0EnTv-_agXOiiKXkuuJUM3wZYxHxAg&oe=625E4E9C);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200vh;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    flex: 1 0 auto;
+    padding: 50px 100px;
+    box-sizing: border-box;
+}
+h1 {
+    margin: 0;
+    font-family: Akshar;
+    text-transform: uppercase;
+    padding-top: 200px;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-shadow: -5px 8px 0px rgba(0, 0, 0, 0.95);
+}
+h2 {
+    margin: 0;
+    font-family: Radja;
+    color: white;
+    font-size: 50px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.95);
+}
+.button {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 75px ;
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+    font-family: Akshar;
+    font-size: 50px;
+    background-color: rgb(81, 31, 0);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white;
+    color: rgb(81, 31, 0);
+}
+footer {
+    padding: 10px 20px;
+    text-align: end;
+    font-size: 25px;
+    font-family: Akshar;
+    flex: 0 0 auto;
+    margin: 0;
+    background-color: #82755f;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-shadow: -1px -6px 8px 0px rgba(69, 69, 69, 0.2);
+    -moz-box-shadow: -1px -6px 8px 0px rgba(52, 52, 52, 0.2);
+    box-shadow: -1px -6px 8px 0px rgba(73, 73, 73, 0.2);
+}
+footer p {
+    color: #c5b495;
+    margin: 0;
+}
+footer a{
+    text-decoration: none;
+    color: #ead4ac;
+    margin: 0;
+    transition: 0.2s ease-in-out;
+}
+footer a:hover {
+    color: white;
+}
